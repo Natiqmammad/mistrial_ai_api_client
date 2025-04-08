@@ -1,0 +1,16 @@
+[package]
+name = "mistral_api_client"
+version = "0.1.0"
+edition = "2021"
+authors = ["Natiq maga.natiq@gmail.com>"]
+description = "Unofficial Rust client for Mistral AI API"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/natiqmammad/mistrial_ai_api_client"
+keywords = ["mistral", "ai", "api", "llm"]
+categories = ["api-bindings", "web-programming"]
+
+[dependencies]
+reqwest = { version = "0.12", features = ["json"] }
+serde = { version = "1.0", features = ["derive"] }
+thiserror = "2.0"
+tokio = { version = "1.0", features = ["full"] }
